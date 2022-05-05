@@ -24,9 +24,6 @@ alias la='ls -A'
 alias ..='cd ..'
 alias ll='ls -Alh'
 
-# autocd
-
-
 # themes
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
