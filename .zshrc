@@ -17,10 +17,12 @@ bindkey '^[[B' history-substring-search-down
 # aliases
 alias ls='ls --color=auto'
 alias bu='brew update -v | lolcat'
+alias bo='brew outdated | lolcat'
 alias mod='nano ~/.zshrc'
 alias btop='bpytop'
 alias la='ls -A'
 alias ..='cd ..'
+alias ll='ls -Alh'
 
 # autocd
 
@@ -30,4 +32,6 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# git bare
 alias config='/usr/bin/git --git-dir=/Users/jonathancooper/.cfg/ --work-tree=/Users/jonathancooper'
