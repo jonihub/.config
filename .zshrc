@@ -32,3 +32,8 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # git bare
 alias config='/usr/bin/git --git-dir=/Users/jonathancooper/.cfg/ --work-tree=/Users/jonathancooper'
+
+### RANDOM COLOR SCRIPT FROM DT COLORSCRIPT ###
+colorscript random
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
