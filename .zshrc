@@ -37,3 +37,5 @@ alias config='/usr/bin/git --git-dir=/Users/jonathancooper/.cfg/ --work-tree=/Us
 colorscript random
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
