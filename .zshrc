@@ -24,18 +24,25 @@ alias la='ls -A'
 alias ..='cd ..'
 alias ll='ls -Alh'
 
-# themes
+# git bare
+alias config='/usr/bin/git --git-dir=/Users/jonathancooper/.cfg/ --work-tree=/Users/jonathancooper'
+
+# fzf config
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# pyenv config
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# Themes
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# git bare
-alias config='/usr/bin/git --git-dir=/Users/jonathancooper/.cfg/ --work-tree=/Users/jonathancooper'
-
-### RANDOM COLOR SCRIPT FROM DT COLORSCRIPT ###
-colorscript random
-
+# Disable INSTANT_PROMPT 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# RANDOM COLOR SCRIPT FROM DT COLORSCRIPT 
+colorscript random
