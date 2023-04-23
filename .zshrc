@@ -22,7 +22,7 @@ alias mod='nano ~/.zshrc'
 alias btop='bpytop'
 alias la='ls -A'
 alias ..='cd ..'
-alias ll='ls -Alh'
+alias ll='lsd -Alh'
 
 # git bare
 alias config='/usr/bin/git --git-dir=/Users/jonathancooper/.cfg/ --work-tree=/Users/jonathancooper'
