@@ -28,7 +28,8 @@ alias ll='lsd -Alh'
 alias config='/usr/bin/git --git-dir=/Users/jonathancooper/.cfg/ --work-tree=/Users/jonathancooper'
 
 # fzf config
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 # pyenv config
 export PYENV_ROOT="$HOME/.pyenv"
